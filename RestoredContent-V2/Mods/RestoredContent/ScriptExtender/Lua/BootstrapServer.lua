@@ -1,3 +1,6 @@
+PersistentVars = {
+    
+}
 local function OnSessionLoaded()        
     local itemArray = {
         --ACT 1
@@ -210,7 +213,7 @@ local function OnSessionLoaded()
             ItemUUID = "cf89e4d8-485c-4cef-8098-959834cc8ac1",
             EnemyName = "Araj",
             EnemyMapKey = "511c9413-25fe-449c-a81d-4b09bc20745a",
-            Equip = true
+            Equip = false
         },
         {
             ItemName = "Braindrain Cape",
@@ -342,8 +345,15 @@ local function OnSessionLoaded()
         {
             ItemName = "Scarab of Protection",
             ItemUUID = "7107c86e-ec6a-4bd8-bc93-8147412fc501",
-            EnemyName = "Alioramus Colossa",
-            EnemyMapKey = "60a49df8-b266-40b4-bc44-2ac1ec36a7cc",
+            EnemyName = "Popper",
+            EnemyMapKey = "60e4431d-dee5-4af4-a05e-65896ec64f2f",
+            Equip = false
+        },
+        {
+            ItemName = "Planeslayer Flail",
+            ItemUUID = "8c733d14-6cbc-4227-9d87-0e42ce0965c4",
+            EnemyName = "Popper",
+            EnemyMapKey = "60e4431d-dee5-4af4-a05e-65896ec64f2f",
             Equip = false
         },
         {
@@ -351,13 +361,6 @@ local function OnSessionLoaded()
             ItemUUID = "a0dfac7c-c6ea-44f1-a12d-b5e67887ae8e",
             EnemyName = "Newborn Mind Flayer",
             EnemyMapKey = "06f52eea-4d18-4bf4-a0d1-58adb28997e1",
-            Equip = false
-        },
-        {
-            ItemName = "Planeslayer Flail",
-            ItemUUID = "8c733d14-6cbc-4227-9d87-0e42ce0965c4",
-            EnemyName = "Smugglers Cave",
-            EnemyMapKey = "817c90d2-34c7-41fd-8e35-cbb5b88176b0",
             Equip = false
         }
         --{
@@ -373,24 +376,16 @@ local function OnSessionLoaded()
     local itemsToAdd = Ext.Json.Parse(json)
 
     function OnLevelLoaded()
-        Ext.Vars.RegisterModVariable(ModuleUUID, "DistributedItems", {})
-        local modvars = Ext.Vars.GetModVariables(ModuleUUID)
-        modvars.DistributedItems = modvars.DistributedItems or {}
         _P("Beginning adding to inventories")
         for itemCount = 1, #itemsToAdd do
             local item = itemsToAdd[itemCount]
-            --_P(item.ItemUUID, item.EnemyMapKey)
-            --_P(Osi.TemplateIsInInventory(item.ItemUUID, item.EnemyMapKey))
-            --if modvars.DistributedItems[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] ~= true then
-            --    _P(modvars.DistributedItems[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')])
-            --end
-            if modvars.DistributedItems[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] ~= true and Osi.TemplateIsInInventory(item.ItemUUID, item.EnemyMapKey) ~= nil and Osi.TemplateIsInInventory(item.ItemUUID, item.EnemyMapKey) < 1 then
+            if PersistentVars[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] ~= true and Osi.TemplateIsInInventory(item.ItemUUID, item.EnemyMapKey) ~= nil and Osi.TemplateIsInInventory(item.ItemUUID, item.EnemyMapKey) < 1 then
                 Osi.TemplateAddTo(item.ItemUUID, item.EnemyMapKey, 1)
                 --_P(item.ItemName, "added to inventory of", item.EnemyName)
-                modvars.DistributedItems[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] = true
-                modvars.DistributedItems = modvars.DistributedItems
+                PersistentVars[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] = true
+                --PersistentVars = PersistentVars
             else
-                if modvars.DistributedItems[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] == true then
+                if PersistentVars[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] == true then
                     _P(item.EnemyName, "has been previously assigned this item via variable")
                 end
                 if Osi.TemplateIsInInventory(item.ItemUUID, item.EnemyMapKey) == nil then
