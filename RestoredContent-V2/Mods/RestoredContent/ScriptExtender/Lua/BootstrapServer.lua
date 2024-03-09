@@ -2,18 +2,11 @@ local function OnSessionLoaded()
     local itemArray = {
         --ACT 1
         {
-            ItemName = "Deadly Channeller Gloves",
-            ItemUUID = "e07fb5cb-4276-4ecd-8758-7bb9b172372b",
-            EnemyName = "Random Backpack",
-            EnemyMapKey = "d4dfa77d-79df-48a5-91b2-f0980047a8ee",
-            Equip = false
-        },
-        {
             ItemName = "A Sparking Promise",
             ItemUUID = "5c8235c3-1aad-4b6d-bd0c-9753c77da5d2",
             EnemyName = "Bernard",
             EnemyMapKey = "5038c0f2-0022-4699-82ce-a319b30616bb",
-            Equip = true
+            Equip = false
         },
         {
             ItemName = "Arduous Flame Blade",
