@@ -1,0 +1,233 @@
+new treasuretable "UND_Tower_SecretCellar_RewardChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_ChargedLightning_EnsnaringShock_Ring",1,0,0,0,0,0,0,0
+
+new treasuretable "GOB_Festivities_Trader"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_FlamingFist_FlamingBlade",1,0,0,0,0,0,0,0
+
+new treasuretable "CHA_Exterior_Bandit_Leader"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Bonded_Lethal_Longsword",1,0,0,0,0,0,0,0
+
+new treasuretable "UND_Bulette"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Mobility_SprintForMomentum_ChainShirt",1,0,0,0,0,0,0,0
+
+new treasuretable "PLA_Tollhouse_Secret_Chest"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Critical_CriticalCombo_BattleAxe",1,0,0,0,0,0,0,0
+
+new treasuretable "FOR_Courier"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Critical_ArcanicCritical_Gloves",1,0,0,0,0,0,0,0
+
+new treasuretable "PLA_ZhentarimTrader_Extra"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Enforcer_NonLethalFright_Club",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Enforcer_NonLethalBlessing_Shield",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Enforcer_RejunevatingKnock_Helmet",1,0,0,0,0,0,0,0
+
+new treasuretable "UND_MycoVillage_AlchemistDwarf_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Fire_ApplyBurningOnFireDamage_Gloves",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_LowHP_ResistanceFire_Gloves",1,0,0,0,0,0,0,0
+
+new treasuretable "HAG_Lair_RingChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_HAG_HagsRing",1,0,0,0,0,0,0,0
+
+new treasuretable "GOB_GoblinPriest"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_LowHP_IncreasedSpellDamage_Amulet",1,0,0,0,0,0,0,0
+
+new treasuretable "DEN_Harpy_HiddenChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Druid_Ironwood_Armor",1,0,0,0,0,0,0,0
+
+new treasuretable "FOR_ThayanCellar_Coffin_First"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_LC_HellishMadness_Amulet",1,0,0,0,0,0,0,0
+
+new treasuretable "GOB_King_Treasures"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_BG_OfSpeed_LightCrossbow",1,0,0,0,0,0,0,0
+
+new treasuretable "PLA_Tavern_DrowRaider_Corpse"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_LC_DrowSpider_Gloves",1,0,0,0,0,0,0,0
+
+new treasuretable "FOR_UnfortunateGnome_Backpack"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Fire_IncreasedDamage_Ring",1,0,0,0,0,0,0,0
+
+new treasuretable "CHA_Exterior_Bandit_Caster"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_OfSpellResistance_Robe",1,0,0,0,0,0,0,0
+
+new treasuretable "UND_KC_ThrinnChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_LowHP_CounterOnDamage_ChainShirt",1,0,0,0,0,0,0,0
+
+new treasuretable "UND_SocietyOfBrilliance_Hobgoblin"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Shadow_Shadowstep_Boots",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Bonded_Shield",1,0,0,0,0,0,0,0
+
+new treasuretable "FOR_Spiders_SpiderQueen"
+CanMerge 1
+new subtable "1,1"
+object category "I_FOR_WebStaff",1,0,0,0,0,0,0,0
+
+new treasuretable "UND_ZhentPort_NecromancyShipment"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_CQCaster_GainArcaneChargeOnDamage_Quarterstaff",1,0,0,0,0,0,0,0
+
+new treasuretable "PLA_Tollhouse_Secret_Chest"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Steadfast_Maul",1,0,0,0,0,0,0,0
+
+new treasuretable "GOB_Minthara_Chest"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Monk_Lightning_Gloves",1,0,0,0,0,0,0,0
+
+new treasuretable "UND_PetrifiedDrow_Drow_Commander"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_LowHP_IncreaseSpeed_Boots",1,0,0,0,0,0,0,0
+
+new treasuretable "UND_MycoVillage_DeadDrowHermit"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Critical_CriticalSwiftness_Boots",1,0,0,0,0,0,0,0
+
+new treasuretable "SCL_SeluniteGrave"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Bonded_Throwing_Battleaxe",1,0,0,0,0,0,0,0
+
+new treasuretable "MOO_InfernalTrader_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_ArcaneAbsorption_Dagger",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Vampiric_Gloves",1,0,0,0,0,0,0,0
+
+new treasuretable "SHA_MerregonTrader"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Infernal_Warhammer",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_Infernal_Longsword",1,0,0,0,0,0,0,0
+
+new treasuretable "SHA_LastJusticiar_Treasure"
+CanMerge 1
+new subtable "1,1"
+object category "I_DEN_Apprentice_DaggerOfShar",1,0,0,0,0,0,0,0
+
+new treasuretable "COL_Barracks_MistressOfSouls"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Psychic_MentalFatigue_Cape",1,0,0,0,0,0,0,0
+
+new treasuretable "HAV_Thiefling_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_FreeCast_Shortsword",1,0,0,0,0,0,0,0
+
+new treasuretable "HAV_UnfortunateGnome_Trade"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_BG_Gargoyle_Boots",1,0,0,0,0,0,0,0
+
+new treasuretable "MOO_ZhentQuartermaster"
+CanMerge 1
+new subtable "1,1"
+object category "I_UNI_ARM_OfTeleportation_Helm",1,0,0,0,0,0,0,0
+
+new treasuretable "SCL_ShadowMastiffs_TrueSoulCorpse"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Cunning_HandCrossbow",1,0,0,0,0,0,0,0
+
+new treasuretable "SHA_JusticiarSkeleton_Combat_Treasure"
+CanMerge 1
+new subtable "1,1"
+object category "I_UNI_DarkJusticiarArmor_HalfPlate",1,0,0,0,0,0,0,0
+
+new treasuretable "SCL_GithOliver_Treasure"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Shadow_Battleaxe",1,0,0,0,0,0,0,0
+
+new treasuretable "HAV_Meenlock_Reward"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_ZOC_ForceConduitWhileSurounded_Boots",1,0,0,0,0,0,0,0
+
+new treasuretable "HAV_HarperQuarterMaster"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_ZOC_Force_Helmet",1,0,0,0,0,0,0,0
+
+new treasuretable "HAV_TavernHiddenPlank"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_ZOC_RampartAura_Amulet",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_WQH_AllandraChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_LC_Umberlee_Regeneration_Boots",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_MAG_LC_Frigid_Trident",1,0,0,0,0,0,0,0
+
+new treasuretable "WYR_Circus_KoboldMerchant"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Hat_Circushat",1,0,0,0,0,0,0,0
+
+new treasuretable "LOW_Sarevok_Treasure"
+CanMerge 1
+new subtable "1,1"
+object category "I_UNI_ARM_Sarevok_Armor",1,0,0,0,0,0,0,0
+
+new treasuretable "WYR_JungleOfChult_Arcanic_Treasure"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_PHB_ScarabOfProtection_Amulet",1,0,0,0,0,0,0,0
+
+new treasuretable "WYR_Windmill_Mindflayer"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_Critical_BolsteringCritical_Armor",1,0,0,0,0,0,0,0
+
+new treasuretable "WYR_SmugglerCave_Basement_Treasure"
+CanMerge 1
+new subtable "1,1"
+object category "I_MAG_LC_ChainDevil_Flail",1,0,0,0,0,0,0,0
