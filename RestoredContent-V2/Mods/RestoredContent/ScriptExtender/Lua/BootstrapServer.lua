@@ -207,6 +207,27 @@ local function OnSessionLoaded()
             EnemyMapKey = "1f86d2de-db96-4662-a360-6ba5ad902fd7",
             Equip = true
         },
+        {
+            ItemName = "Absolute's Smite",
+            ItemUUID = "f09b6c2f-e5f3-43df-82c7-9ed5862a7421",
+            EnemyName = "Grukkoh",
+            EnemyMapKey = "b6c6764f-ba9d-4109-8b4e-c0d1da72be7d",
+            Equip = true
+        },
+        {
+            ItemName = "Mind Sundering Dagger",
+            ItemUUID = "33e89c49-6e6f-4143-a57e-c53344422dbf",
+            EnemyName = "Ghustil Stornugoss",
+            EnemyMapKey = "c04c1977-d53f-4b5c-a29d-2e8d75024768",
+            Equip = true
+        },
+        {
+            ItemName = "Lofty Sorcerer's Amulet",
+            ItemUUID = "99864ac4-824c-4049-8933-e81667c4a408",
+            EnemyName = "Filro",
+            EnemyMapKey = "2f00e363-09b2-4573-badc-f0995bef6610",
+            Equip = true
+        },
         --ACT 2
         {
             ItemName = "Arcane Absorption Dagger",
@@ -314,6 +335,13 @@ local function OnSessionLoaded()
             Equip = true
         },
         --ACT 3
+        {
+            ItemName = "The Impaler",
+            ItemUUID = "53023726-12bd-4871-805a-66744321dfdb",
+            EnemyName = "Zenovia Dawg",
+            EnemyMapKey = "bed33e19-1620-4845-aaa6-52de87f7e2e8",
+            Equip = false
+        },
         {
             ItemName = "Allandra's Whelm",
             ItemUUID = "503d3d60-8798-4c65-bec1-347392733c86",
