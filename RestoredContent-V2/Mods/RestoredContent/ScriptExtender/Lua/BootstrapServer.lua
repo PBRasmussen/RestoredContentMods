@@ -103,13 +103,6 @@ local function OnSessionLoaded()
             Equip = false
         },
         {
-            ItemName = "Kruznabir's Asylum Amulet",
-            ItemUUID = "52503330-69de-427a-a443-b49ab748fc1c",
-            EnemyName = "Shovels Coffin",
-            EnemyMapKey = "bfa6370c-b65a-4a7e-8a35-3c69a4b4f427",
-            Equip = false
-        },
-        {
             ItemName = "Light Crossbow of Speed",
             ItemUUID = "664ff469-770a-4597-9be2-506465e5486f",
             EnemyName = "Beastmaster Zurk",
@@ -228,7 +221,28 @@ local function OnSessionLoaded()
             EnemyMapKey = "2f00e363-09b2-4573-badc-f0995bef6610",
             Equip = true
         },
+        {
+            ItemName = "Synaptic Needle Amulet",
+            ItemUUID = "28daf3e2-18c6-479d-82f6-54041596980e",
+            EnemyName = "Pooldripp the Zealous",
+            EnemyMapKey = "a1f879ab-8731-4889-9b7b-d91b5094dbc0",
+            Equip = true
+        },
+        {
+            ItemName = "Ring of Beguiling",
+            ItemUUID = "931bdffe-0a36-4645-89f9-5ea7ec2eeb7f",
+            EnemyName = "Pooldripp the Zealous",
+            EnemyMapKey = "a1f879ab-8731-4889-9b7b-d91b5094dbc0",
+            Equip = true
+        },
         --ACT 2
+        {
+            ItemName = "Kruznabir's Asylum Amulet",
+            ItemUUID = "52503330-69de-427a-a443-b49ab748fc1c",
+            EnemyName = "Sister Lidwin",
+            EnemyMapKey = "64198bb1-d575-4b7b-bcf9-0c58d24020f1",
+            Equip = false
+        },
         {
             ItemName = "Arcane Absorption Dagger",
             ItemUUID = "cf89e4d8-485c-4cef-8098-959834cc8ac1",
@@ -400,7 +414,7 @@ local function OnSessionLoaded()
         --}
     }
     local json = Ext.Json.Stringify(itemArray)
-    _P(json)
+    -- _P(json)
     local itemsToAdd = Ext.Json.Parse(json)
 
     function OnLevelLoaded()
@@ -409,7 +423,7 @@ local function OnSessionLoaded()
             local item = itemsToAdd[itemCount]
             if PersistentVars[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] ~= true and Osi.TemplateIsInInventory(item.ItemUUID, item.EnemyMapKey) ~= nil and Osi.TemplateIsInInventory(item.ItemUUID, item.EnemyMapKey) < 1 then
                 Osi.TemplateAddTo(item.ItemUUID, item.EnemyMapKey, 1)
-                --_P(item.ItemName, "added to inventory of", item.EnemyName)
+                _P(item.ItemName, "added to inventory of", item.EnemyName)
                 PersistentVars[item.ItemName:gsub('%W','') .. item.EnemyName:gsub('%W','')] = true
                 --PersistentVars = PersistentVars
             else
@@ -470,11 +484,11 @@ local function OnSessionLoaded()
             local item = itemsToAdd[itemCount]
             if item.ItemUUID == GetGUID(wpn_root) then
                 if (item.Equip == true and GetGUID(character) == item.EnemyMapKey and IsPartyMember(character, 1) == 0) then
-                    _P(character, "attempting to equip")
+                    -- _P(character, "attempting to equip")
                     if (IsEquipable(wpn_id) == 1) then
                         local slot = GetEquipmentSlotForItem(wpn_id)          
                         UnequipExistingItems(character, slot)
-                        _P(character, "equipped", wpn_root)
+                        -- _P(character, "equipped", wpn_root)
                         Equip(character, wpn_id)
                     end 
                 end
